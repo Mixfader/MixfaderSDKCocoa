@@ -9,29 +9,22 @@
 
 Pod::Spec.new do |s|
 s.name         = "MixfaderSDKCocoa"
-s.version      = "2.0"
+s.version      = "2.0.1"
 s.summary      = "The mixfader SDK"
 s.description  = <<-DESC
 The mixfader SDK, more info on themixfader.com/dev
 DESC
 s.homepage     = "http://themixfader.com"
-s.license      = { :type => 'All rights reserved', :text => <<-LICENSE
-DJiT 2015 - All rights reserved
-LICENSE
-}
+s.license      = "Apache 2.0"
 s.authors            = { "Jean-Baptise Fabre" => "jean-baptiste.fabre@djit.fr" }
 s.ios.deployment_target = "8.0"
 s.osx.deployment_target = "10.8"
-s.source       = { :git => "git@github.com:Mixfader/MixfaderSDKCocoa.git", :tag => "2.0" }
+s.source       = { :git => "https://github.com/Mixfader/MixfaderSDKCocoa.git", :tag => "2.0.1" }
 s.source_files  = "**/*.{h,m}"
 
-s.osx.source_files  =  "MixfaderSDKOSX/*.*.{h,m}", "MixfaderSDKOSX/include/*.h"
-s.osx.vendored_library = "MixfaderSDKOSX/libMXFSDK_osx.a"
-s.osx.public_header_files = "MixfaderSDKiOS/include/*.h"
 
-s.ios.source_files  = "MixfaderSDKiOS/*.*.{h,m}", "MixfaderSDKiOS/include/*.h"
-s.ios.vendored_library = "MixfaderSDKiOS/libMXFSDK_ios.a"
-s.ios.public_header_files = "MixfaderSDKOSX/include/*.h"
+s.osx.vendored_frameworks = "MixfaderSDK_OSX.framework"
+s.ios.vendored_frameworks = "MixfaderSDK_iOS.framework"
 
 s.requires_arc = true
 s.frameworks = "CoreMIDI", "CoreBluetooth"
