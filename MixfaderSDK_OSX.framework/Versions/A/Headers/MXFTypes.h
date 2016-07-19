@@ -31,6 +31,7 @@
 
 
 @class MXFMixfaderInterface;
+@class MXFComEvent;
 
 typedef NS_ENUM(NSUInteger, MXFConnectEvent) {
 	CONNECT_START,
@@ -83,6 +84,21 @@ typedef NS_ENUM(NSUInteger, MXFFaderNotificationModeType) {
     FADER_NOTIFY_ON_VALUE_CHANGE,
 };
 
+typedef NS_ENUM(NSUInteger, MXFCommunicationEventType) {
+	STRING_TYPE,
+	RAW_TYPE,
+	INT_TYPE,
+	INT_ARRAY_TYPE,
+	DOUBLE_ARRAY_TYPE,
+	FLOAT_ARRAY_TYPE,
+	LONG_ARRAY_TYPE,
+	BOOLEAN_ARRAY_TYPE,
+	DOUBLE_TYPE,
+	FLOAT_TYPE,
+	LONG_TYPE,
+	BOOLEAN_TYPE,
+};
+
 typedef struct
 {
     uint16_t cutMin;
@@ -95,8 +111,6 @@ typedef void(^MXFRenameCompletion)(BOOL success, NSError * _Nullable error, NSSt
 
 typedef void(^MXFFaderCompletion)(BOOL succes, NSError * _Nullable error, BOOL state);
 
-typedef void(^MXFModeCompletion)(BOOL succes, NSError * _Nullable error, MXFModeType mode);
-
 typedef void(^MXFCalibrationCompletion)(BOOL succes, uint16_t cutMin, uint16_t cutMax, uint16_t calMin, uint16_t calMax, NSError * _Nullable error);
 
 typedef void(^MXFBlinkLedCompletion)(NSError * _Nullable error);
@@ -108,6 +122,9 @@ typedef void (^MXFConnectCompletion) (MXFConnectEvent event, NSError * _Nullable
 typedef void (^MXFScanBlock) (MXFMixfaderInterface * _Nullable mixfader, NSError * _Nullable error);
 
 typedef void (^MXFBatteryBlock) (NSInteger battery, BOOL charging, NSError * _Nullable error);
+
+typedef void (^MXFSharedComBlock) (NSError * _Nullable error);
+
 
 
 

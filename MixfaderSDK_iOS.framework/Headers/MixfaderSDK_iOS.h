@@ -19,4 +19,5 @@ FOUNDATION_EXPORT const unsigned char MixfaderSDK_iOSVersionString[];
 #import <MixfaderSDK_iOS/MXFDefinesHeader.h>
 #import <MixfaderSDK_iOS/MXFErrorDefine.h>
 #import <MixfaderSDK_iOS/MXFTypes.h>
+#import <MixfaderSDK_iOS/MXFComEvent.h>
 

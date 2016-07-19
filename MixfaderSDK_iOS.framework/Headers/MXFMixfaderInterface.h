@@ -88,6 +88,18 @@
 
 @end
 
+@protocol MXFSharedCommunicationObserver <NSObject>
+@optional
+- (void)mixfader:(nonnull MXFMixfaderInterface*)mixfader didReceiveSharedConnectionEvent:(nonnull MXFComEvent *)connectionEvent;
+
+- (void)mixfader:(nonnull MXFMixfaderInterface*)mixfader didReceiveSharedDisconnectionEvent:(nonnull MXFComEvent *)disconnectionEvent;
+
+- (void)mixfader:(nonnull MXFMixfaderInterface*)mixfader didReceiveSharedCommunicationEvent:(nonnull MXFComEvent *)comEvent;
+
+- (void)mixfader:(nonnull MXFMixfaderInterface*)mixfader sharedCommunicationStatusChange:(BOOL)enable;
+// enable / disable the shared connection session
+
+@end
 
 
 @interface MXFMixfaderInterface : NSObject
@@ -511,6 +523,36 @@
  * @return hardwareVersion NSString
  */
 - (nonnull NSString*)hardwareVersion;
+
+
+//-------------------
+#pragma mark - Shared communitcation
+
+/*!
+ * @discussion add an observer for any shared communication event of the MXFSharedComDelegate protocol
+ * @param observer an object that conform to MXFSharedComDelegate protocol
+ * @see MXFSharedComDelegate
+ */
+- (void)addSharedComObserver:(nonnull id <MXFSharedCommunicationObserver>)observer;
+
+/*!
+ * @discussion remove an observer from the SharedCom observer list
+ * @param observer an object that conform to MXFSharedComDelegate protocol
+ * @see MXFSharedComDelegate
+ */
+- (void)removeSharedComObserver:(nonnull id <MXFSharedCommunicationObserver>)observer;
+
+- (void)startSharedCommunication:(nullable MXFSharedComBlock)completion;
+
+- (void)stopSharedCommunication:(nullable MXFSharedComBlock)completion;
+
+- (void)sendCommunicationEvent:(nullable MXFComEvent *)comEvent completion:(nullable MXFSharedComBlock)completion;
+
+- (BOOL)ownSharedSession;
+
+- (nonnull NSString *)sharedConnectedDeviceName;
+
+- (BOOL)sharedCommunicationStarted;
 
 
 @end

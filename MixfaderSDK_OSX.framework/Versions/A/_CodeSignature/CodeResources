@@ -41,11 +41,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cgOfxhJa9s1gLNNpKadaFJ9lejo=
+			LNlp+5+s65mKsFvOvv9fKH4zNeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			nKWHmAUF2OjuE46OsuGuch5HsRVsZp6eMbQYfmc3R8Q=
+			hDUZV8qqmmDK4goI9hwIAOktMtjraqOj0arq6SbpGpU=
 			</data>
 		</dict>
 		<key>Headers/MXFSession.h</key>
@@ -63,22 +63,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			owQqIbqLunnlqUd2g6Q5OMa6m+A=
+			907anAorhjFe70S8qrKJaqiVdHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			joYwUTSu7L2+LnWZ2/ab2MIR753nm5Zpbp4azDHgYgI=
+			fHAiUcX7NZjwgjZAfJCpn0w+I/L5/p3qc4YA7aVm3/k=
 			</data>
 		</dict>
 		<key>Headers/MixfaderSDK_OSX.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2MrBMJM2pJj5fd3aoqCiEAzo214=
+			Ns7qjJqDsqGtuoUKcC7DXJrI46M=
 			</data>
 			<key>hash2</key>
 			<data>
-			iUwTNsuKBEmxtXr44IG28RBPMqdxpAw8uCgBiiaXIwE=
+			Lc3FCrn07KgjqI/lFee9ouUwY9bnGyyeYieJLNlAoa8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/MXFComEvent.h</key>
+		<data>
+		+BU+0L29UFL7M+tEEIcDdEMuXYk=
+		</data>
 		<key>Headers/MXFDefinesHeader.h</key>
 		<data>
 		eIcmmgEMoE+9ebf7Fg4OKkOCfzk=
@@ -14,7 +18,7 @@
 		</data>
 		<key>Headers/MXFMixfaderInterface.h</key>
 		<data>
-		cgOfxhJa9s1gLNNpKadaFJ9lejo=
+		LNlp+5+s65mKsFvOvv9fKH4zNeM=
 		</data>
 		<key>Headers/MXFSession.h</key>
 		<data>
@@ -22,11 +26,11 @@
 		</data>
 		<key>Headers/MXFTypes.h</key>
 		<data>
-		owQqIbqLunnlqUd2g6Q5OMa6m+A=
+		907anAorhjFe70S8qrKJaqiVdHQ=
 		</data>
 		<key>Headers/MixfaderSDK_iOS.h</key>
 		<data>
-		Bc0ZacDy8AIKUqvyfMLcrwTKbQc=
+		Vr0kUS3+GDdlQA/11QZ29D8sulk=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -43,6 +47,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/MXFComEvent.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+BU+0L29UFL7M+tEEIcDdEMuXYk=
+			</data>
+			<key>hash2</key>
+			<data>
+			qavXMPd/PR57euWdB+DZe4nrfpoUeJ5jjEmkJGmXKJ8=
+			</data>
+		</dict>
 		<key>Headers/MXFDefinesHeader.h</key>
 		<dict>
 			<key>hash</key>
@@ -69,11 +84,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cgOfxhJa9s1gLNNpKadaFJ9lejo=
+			LNlp+5+s65mKsFvOvv9fKH4zNeM=
 			</data>
 			<key>hash2</key>
 			<data>
-			nKWHmAUF2OjuE46OsuGuch5HsRVsZp6eMbQYfmc3R8Q=
+			hDUZV8qqmmDK4goI9hwIAOktMtjraqOj0arq6SbpGpU=
 			</data>
 		</dict>
 		<key>Headers/MXFSession.h</key>
@@ -91,22 +106,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			owQqIbqLunnlqUd2g6Q5OMa6m+A=
+			907anAorhjFe70S8qrKJaqiVdHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			joYwUTSu7L2+LnWZ2/ab2MIR753nm5Zpbp4azDHgYgI=
+			fHAiUcX7NZjwgjZAfJCpn0w+I/L5/p3qc4YA7aVm3/k=
 			</data>
 		</dict>
 		<key>Headers/MixfaderSDK_iOS.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Bc0ZacDy8AIKUqvyfMLcrwTKbQc=
+			Vr0kUS3+GDdlQA/11QZ29D8sulk=
 			</data>
 			<key>hash2</key>
 			<data>
-			BgNusqSckhwqUNfKZLcVZHZanOKggZjcm9iiQeVDbKs=
+			Oktuub7GfF6qGJ8F9QTWFUHIA8E2zGx3X/z3izt+YGc=
 			</data>
 		</dict>
 		<key>LICENSE.txt</key>
