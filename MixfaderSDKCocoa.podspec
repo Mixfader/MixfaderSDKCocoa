@@ -14,7 +14,7 @@ s.summary      = "The mixfader SDK"
 s.description  = <<-DESC
 The mixfader SDK, more info on themixfader.com/dev
 DESC
-s.homepage     = "http://themixfader.com"
+s.homepage     = "https://github.com/Mixfader/MixfaderSDKSample/wiki"
 s.license      = "Apache 2.0"
 s.authors            = { "Jean-Baptise Fabre" => "jean-baptiste.fabre@djit.fr" }
 s.ios.deployment_target = "8.0"
