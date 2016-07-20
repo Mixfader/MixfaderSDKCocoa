@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
 s.name         = "MixfaderSDKCocoa"
-s.version      = "2.1"
+s.version      = "2.1.1"
 s.summary      = "The mixfader SDK"
 s.description  = <<-DESC
 The mixfader SDK, more info on themixfader.com/dev
@@ -19,7 +19,7 @@ s.license      = "Apache 2.0"
 s.authors            = { "Jean-Baptise Fabre" => "jean-baptiste.fabre@djit.fr" }
 s.ios.deployment_target = "8.0"
 s.osx.deployment_target = "10.8"
-s.source       = { :git => "https://github.com/Mixfader/MixfaderSDKCocoa.git", :tag => "2.1" }
+s.source       = { :git => "https://github.com/Mixfader/MixfaderSDKCocoa.git", :tag => "2.1.1" }
 s.osx.vendored_frameworks = "MixfaderSDK_OSX.framework"
 s.ios.vendored_frameworks = "MixfaderSDK_iOS.framework"
 s.requires_arc = true
